@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me 101</title>
+  <style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+      body {
+        margin: 5;
+        font-family:'poppins', sans-serif;
+        background: linear-gradient(90deg, #A7B9FA, #C3E7FF);
+        height: 100%;
+        margin: 0;
+      }
+
+      .navbar {
+				position: fixed;
+				width: 95%;
+				top: 0;
+        background-color: #F8ECCC;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+				filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+				border-radius:30px;
+        margin: 30px;
+				z-index: 100;
+      }
+
+      .navbar a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      .navbar a:hover {
+        background-color: #786ba3;
+        color: rgb(255, 255, 255);
+      }
+
+      .gradient-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #2B1272, transparent);
+            z-index: 90;
+        }
+      
+      .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .home-text {
+            text-align: center;
+            margin: 200px
+        }
+
+        .home-text h1 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 30px;
+        }
+
+        .home-text h1 span.bold {
+            font-weight: bold;
+        }
+
+        .home-text h1 span.italic {
+            font-style: italic;
+        }
+
+        .home-image {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .about {
+            padding: 0 50px;
+        }
+
+        .about h2 {
+            margin-top: 0;
+        }
+			
+        .bottom-nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 100;
+        }
+        .bottom-nav-bar a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            flex-grow: 1;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-nav-bar a i {
+            font-size: 24px;
+        }
+
+        .bottom-nav-bar a span {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .bottom-nav-bar a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+			<a href="home.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="project.html" class="nav-link">Project</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="gradient-bar"></div>
+
+		<div class="home">
+      <div class="home-text">
+        <h1>Hello, I am</h1>
+        <h1><span class="bold">Fadia Syakira Mustaniroh</span></h1>
+        <h1><span class="italic">Undergraduate Computer Science Student</span></h1>
+      </div>
+
+      <div>
+        <img class="fotofadia" src="assets/fotofadia.png" alt="profile image">
+      </div>
+
+		</div>
+  
+    <div class="bottom_navbar">
+			<a href="instagram.com/fadiapc" class="nav-link">
+        <img src="assets/F.png">
+      </a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="#project" class="nav-link">Project</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+</body>
+</html>
